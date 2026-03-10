@@ -20,6 +20,7 @@ import androidx.compose.ui.unit.dp
 fun EntryScreen(
     onNavigateToEditor: (Uri?) -> Unit
 ) {
+
     val launcher = rememberLauncherForActivityResult(
         contract = ActivityResultContracts.GetContent()
     ) { uri: Uri? ->
